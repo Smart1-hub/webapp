@@ -20,11 +20,13 @@ const Detail = () => {
     <div>
       <div>
         <h1>{name}</h1>
+        <p>Continent:</p> {' '} {countryFind.continent}
         <img src={countryFind.country_flag} alt="country-flag"/>
+        <h2>Population:</h2> {' '} {countryFind.population.toLocaleString()}
       </div>
       <div>
         <ul>
-          <h3>Today&apos;s update</h3>
+          <h3>CURRENT UPDATE</h3>
           <li>
             <p>Number of cases</p> {' '} {countryFind.cases.toLocaleString()}
           </li>
@@ -57,12 +59,6 @@ const Detail = () => {
           </li>
           <li>
             <p>Number of tests:</p> {' '} {countryFind.tests.toLocaleString()}
-          </li>
-          <li>
-            <p>Population:</p> {' '} {countryFind.population.toLocaleString()}
-          </li>
-          <li>
-            <p>Continent:</p> {' '} {countryFind.continent}
           </li>
           <li>
             <p>Active per one million:</p> {' '} {countryFind.activePerOneMillion.toLocaleString()}

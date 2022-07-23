@@ -16,6 +16,8 @@ const Home = () => {
   }, [storeCountry.length, dispatch]);
 };
 
+let covidContinent = storeCountry.filter((item) => item.continent === 'Africa');
+
 return (
   <div>
     <ul>
