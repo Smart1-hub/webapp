@@ -1,23 +1,18 @@
-import { BrowserRouter as Router, Routes, Routes } from 'react-router-dom';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '.Navbar/Navbar';
-import Home from './components/Home';
-import Detail from './components/Detail';
-import NoMatch from './components/NoMatch';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './sheets/Home';
+import Detail from './sheets/Detail';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/Detail" element={<Detail />} />
-          <Route path="/*" element={<NoMatch />} />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/country/:name" element={<Detail />} />
       </Routes>
     </Router>
-    </div>
   );
 }
 
