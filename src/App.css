@@ -1,38 +1,147 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.navbar {
+  background-color: #0d7535;
+  padding: 24px;
+  color: #e6e6f6;
+}
+
+.navbar-1 {
+  background-color: #57e5c1;
+  padding: 24px;
+  color: #e6e6f6;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.home {
+  background-color: #0d7535;
+}
+
+.home-header {
+  background-color: #6d2bb8;
+}
+
+.home-image {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-title {
+  text-align: center;
+  color: #e6e6f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  /* width: 100%; */
+  padding: 10px;
+  background-color: #0d7535;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  padding: 0.5rem;
+  width: 100%;
+}
+ input[type=text] {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin: 8px 0;
+  box-sizing: border-box;
+ }
+
+.country-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+  text-decoration: none;
+}
+
+.list-details {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.country-list a:nth-child(4n),
+.country-list a:nth-child(4n + 1) {
+  background-color: #47daae;
+  color: #fff;
+  border: 1px solid #57e5c1;
+}
+
+.national-flag {
+  width: 50px;
+  height: 35px;
+}
+
+.name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.pupalution {
+  font-size: 20px;
+}
+
+.Container {
+  background-color: #0d7535;
+  color: #fff;
+}
+
+.continent,
+.today,
+.total {
+  text-align: center;
+  list-style: none;
+}
+
+.Arrow {
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0 auto;
+    width: 75%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .list-details {
+    display: flex;
+    justify-content: space-between;
   }
 }

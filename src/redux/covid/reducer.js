@@ -7,7 +7,7 @@ const statsData = (payload) => ({
   payload,
 });
 
-const covidReducer = (state = initialState, action = { type: action }) => {
+const covidReducer = (state = initialState, action = { type: 'action' }) => {
   switch (action.type) {
     case STATS_DATA:
       return [...state, ...action.payload];
@@ -17,4 +17,4 @@ const covidReducer = (state = initialState, action = { type: action }) => {
   }
 };
 
-export default { statsData, covidReducer };
+export { statsData, covidReducer };
