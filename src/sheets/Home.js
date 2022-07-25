@@ -30,24 +30,24 @@ const Home = () => {
   };
 
   return (
-    <div className="pages">
-      <h1 className="area"> AFRICA</h1>
+    <div className="home">
+        <h1 className="home-title"> AFRICA</h1>
       <form className="form">
         <div className="search-bar">
-          <FiSearch />
+          <div><FiSearch /></div>
           <div>
             <input
-              className="input-area"
+              className="input"
               type="text"
               value={searchValue}
-              placeholder="Search Here"
+              placeholder="Search country..."
               onChange={filterCountryOnChange}
             />
           </div>
         </div>
       </form>
-      <ul className="list-country">
-        {covidContinent.map((country) => (
+        <ul className="country-list">
+          {covidContinent.map((country) => (
           <Link
             key={generate()}
             to={{ pathname: `/country/${country.country}` }}
@@ -71,7 +71,7 @@ const Home = () => {
             </li>
           </Link>
         ))}
-      </ul>
+        </ul>
     </div>
   );
 };

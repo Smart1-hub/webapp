@@ -11,7 +11,7 @@ const Navbar = () => {
   const ArrowBack = location.pathname.includes('country') ? navDetails : '';
   return (
     <nav>
-      <div className=" navItems">
+      <div className=" navbar">
         <NavLink exact="true" to={{ pathname: '/' }} className="Arrow">
           {ArrowBack}
         </NavLink>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <AiOutlineSetting />
         </div>
       </div>
-      <div className="navItems1">
+      <div className="navbar-1">
         <h1>{title}</h1>
       </div>
     </nav>
