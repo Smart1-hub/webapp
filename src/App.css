@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -63,6 +63,7 @@ h1 {
   padding: 0.5rem;
   width: 100%;
 }
+
  input[type=text] {
   width: 100%;
   background-color: transparent;
@@ -75,7 +76,6 @@ h1 {
 .country-list {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 2px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -84,7 +84,7 @@ a {
   text-decoration: none;
 }
 
-.list-details {
+.country-details {
   text-decoration: none;
   list-style: none;
   color: #fff;
@@ -97,17 +97,17 @@ a {
   border: 1px solid #57e5c1;
 }
 
-.national-flag {
+.flag {
   width: 50px;
   height: 35px;
 }
 
-.name {
+.country-name {
   font-size: 20px;
   margin: 0;
 }
 
-.pupalution {
+.population {
   font-size: 20px;
 }
 
@@ -117,7 +117,7 @@ a {
 }
 
 .continent,
-.today,
+.cases-today,
 .total {
   text-align: center;
   list-style: none;
@@ -140,7 +140,7 @@ a {
     width: 75%;
   }
 
-  .list-details {
+  .country-details {
     display: flex;
     justify-content: space-between;
   }

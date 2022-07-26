@@ -52,21 +52,20 @@ const Home = () => {
             key={generate()}
             to={{ pathname: `/country/${country.country}` }}
           >
-            <li className="list-details">
-              <div className=" details">
-                <h1 className="name">{country.country}</h1>
-              </div>
-              <div>
-                <h2 className="pupalution">Population:</h2>
-                {' '}
-                <p className="number">{country.population.toLocaleString()}</p>
-              </div>
-              <div className="photo">
+            <li className="country-details">
+            <div className="photo">
                 <img
                   src={country.country_flag}
                   alt="national flag"
-                  className="national-flag"
+                  className="flag"
                 />
+              </div>
+              <div className=" details">
+                <h1 className="country-name">{country.country}</h1>
+              </div>
+              <div>
+                <h2 className="popalution">Population:</h2>
+                <p className="number">{country.population.toLocaleString()}</p>
               </div>
             </li>
           </Link>
