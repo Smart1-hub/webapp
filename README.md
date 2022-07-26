@@ -21,7 +21,7 @@ A Covid-19 data application that displays updates on the disease in countries of
 
 ## Live Link
 
-[Click here]()
+[Click here](https://jocular-profiterole-a5ad73.netlify.app/)
 
 ### Setup
 ~~~ 
